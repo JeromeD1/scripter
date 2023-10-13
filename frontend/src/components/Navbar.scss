@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Julius+Sans+One&family=Kablammo&family=MedievalSharp&display=swap");
+$colorYellow: #ffbd59;
+$colorDark: #070a09;
+$blueColor: #4c60ae;
+$colorWhite: #ffffff;
+$fontSizeP: 1.2rem;
+$fontSizeBouton: 1.3rem;
+$fontSizeTitre: 1.5rem;
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.ContainNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  width: 100vw;
+  padding-top: 16px;
+  box-sizing: border-box;
+  background-color: #070a09;
+  font-family: Julius Sans One;
+
+  .FeatherBox {
+    cursor: none;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 220px;
+      max-width: 15vw;
+      height: auto;
+    }
+  }
+
+  .ContainLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    // width: 1000px;
+    width: 57vw;
+    height: 100%;
+    align-items: center;
+
+    .li-container {
+      display: flex;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      max-width: 14vw;
+      height: 100%;
+      text-decoration: none;
+      border-left: 2px solid #4c60ae;
+      padding-left: 30px;
+      padding-right: 30px;
+      box-sizing: border-box;
+      cursor: none;
+
+      &:last-child {
+        border-right: 2px solid #4c60ae;
+      }
+
+      .link {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        height: 100%;
+        max-width: 25%;
+        align-items: center;
+        text-decoration: none;
+        font-family: Julius Sans One;
+        font-size: 2rem;
+        color: white;
+        // padding: 5px 60px;
+        height: 100%;
+
+        cursor: none;
+
+        &:hover {
+          color: $colorYellow;
+        }
+      }
+    }
+  }
+
+  .PushContain {
+    // margin: 10px;
+    height: 100%;
+    // width: 930px;
+    width: 28vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+
+    .loginContainer {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .button-notifications {
+        cursor: none;
+        position: absolute;
+        left: calc((100% - 300px) / 2 - 15px);
+        bottom: calc(50% - 15px);
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: $colorYellow;
+        color: $blueColor;
+        font-weight: bold;
+        font-size: $fontSizeP;
+        box-shadow: 0px 0px 20px 6px rgba(255, 0, 0, 1);
+        animation: variationBoxShadow 5s linear infinite;
+
+        &:hover {
+          background-color: $blueColor;
+          color: $colorYellow;
+        }
+      }
+
+      .userConnect {
+        width: 300px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: #4c60ae;
+        background-color: #070a09;
+        border-radius: 10px;
+        font-family: Julius Sans One;
+        font-size: 1.5rem;
+        color: #4c60ae;
+        cursor: none;
+        &:hover {
+          background-color: #4c60ae;
+          color: #ffffff;
+        }
+      }
+      .scrollingMenu {
+        position: absolute;
+        top: 70%;
+        left: calc(50% - 150px);
+        width: 300px;
+        z-index: 20;
+        background-color: $colorDark;
+        padding: 0;
+        color: white;
+        font-size: 2rem;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        li {
+          height: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          border-bottom: 2px solid $blueColor;
+          cursor: none;
+
+          &:hover {
+            background-color: $blueColor;
+            color: white;
+            border-bottom: 2px solid $colorYellow;
+          }
+        }
+      }
+      .displayNone {
+        display: none;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .push {
+      width: 160px;
+      max-width: 45%;
+      height: 50px;
+      border-color: $blueColor;
+      background-color: $colorDark;
+      border-radius: 10px;
+      margin: 0;
+      font-family: Julius Sans One;
+      font-size: 1.5rem;
+      color: $blueColor;
+      cursor: none;
+      &:hover {
+        background-color: $blueColor;
+        color: $colorWhite;
+      }
+    }
+  }
+}
+
+.nav-no-scroll {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1250px) {
+  .ContainNav {
+    .ContainLink {
+      padding: 0;
+      .li-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        .link {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes variationBoxShadow {
+  0% {
+    box-shadow: 0px 0px 20px 7px rgba(255, 0, 0, 1);
+  }
+  50% {
+    box-shadow: 0px 0px 20px 7px rgba(255, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0px 0px 20px 7px rgba(255, 0, 0, 1);
+  }
+}

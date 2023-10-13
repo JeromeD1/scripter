@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lustria&display=swap");
+$colorYellow: #ffbd59;
+$colorDark: #070a09;
+$blueColor: #4c60ae;
+$colorWhite: #ffffff;
+$fontSizeP: 1.4rem;
+$fontSizeBouton: 1.3rem;
+$fontSizeTitre: 1.5rem;
+
+.containerCreationsInProgress {
+  width: 100%;
+  margin-top: 56px;
+  margin-left: 56px;
+  h1 {
+    color: $colorYellow;
+    margin-bottom: 56px;
+  }
+
+  .div-switch {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    margin-top: -24px;
+    margin-bottom: 32px;
+    // border: 1px solid white;
+  }
+
+  .boardCards {
+    width: 80%;
+    max-width: 1000px;
+    height: calc(100vh - 210px);
+    overflow-y: auto;
+    padding-right: 72px;
+    padding-top: 20px;
+    // display: grid;
+    // grid-template-columns: 33% 33% 33%;
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    .containerCard {
+      position: relative;
+      width: 277px;
+      height: 450px;
+      .containerImg {
+        position: absolute;
+        z-index: 2;
+        top: -25px;
+        right: -10px;
+      }
+    }
+  }
+}

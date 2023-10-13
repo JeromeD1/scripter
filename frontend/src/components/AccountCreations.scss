@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Lustria&display=swap");
+$colorYellow: #ffbd59;
+$colorDark: #070a09;
+$blueColor: #4c60ae;
+$colorWhite: #ffffff;
+$fontSizeP: 1.4rem;
+$fontSizeBouton: 1.3rem;
+$fontSizeTitre: 1.5rem;
+
+.containerCreations {
+  width: 100%;
+  height: 100%;
+  margin-top: 56px;
+  margin-left: 56px;
+  a:active {
+    background-color: $colorYellow;
+    color: black;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    color: $colorYellow;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    li {
+      width: 200px;
+      padding: 8px;
+      border: 0.5px solid black;
+      background-color: $blueColor;
+      color: $colorWhite;
+      border-radius: 16px 16px 0px 0px;
+      cursor: none;
+      &:hover {
+        color: $blueColor;
+        background-color: $colorWhite;
+      }
+    }
+  }
+}

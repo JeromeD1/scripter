@@ -1,0 +1,34 @@
+$colorYellow: #ffbd59;
+$colorDark: #070a09;
+$blueColor: #4c60ae;
+$colorWhite: #ffffff;
+$fontSizeP: 1.2rem;
+$fontSizeBouton: 1.3rem;
+$fontSizeTitre: 1.5rem;
+
+.container-button {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.allButtonGenre {
+  padding: 8px;
+
+  .ButtonGenre {
+    width: 160px;
+    padding: 6px;
+    // font-size: 0.9rem;
+    font-size: calc($fontSizeBouton/1.45);
+    border: 2px;
+    border-radius: 58px;
+    background-color: $blueColor;
+    color: $colorWhite;
+  }
+
+  .ButtonGenre:hover {
+    background-color: $colorWhite;
+    color: $blueColor;
+  }
+}

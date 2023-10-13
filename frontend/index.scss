@@ -1,0 +1,51 @@
+// @import "./src/library";
+@import url("https://fonts.googleapis.com/css2?family=Lustria&display=swap");
+
+@import "./src/App.scss";
+@import "./src/pages/Home.scss";
+@import "./src/pages/Scripts.scss";
+@import "./src/pages/Editor.scss";
+@import "./src/pages/Forum.scss";
+@import "./src/pages/ScenarioReading.scss";
+@import "./src/components/EditorPage.scss";
+@import "./src/components/SommaireEditor.scss";
+@import "./src/components/SommaireReading.scss";
+@import "./src/components/EditorTextStyle.scss";
+@import "./src/components/EditorPageStyle.scss";
+@import "./src/pages/FormNewScenario.scss";
+@import "./src/pages/ResumePageScenario.scss";
+@import "./src/components/ReadingPage.scss";
+@import "./src/pages/Forum.scss";
+@import "./src/pages/ForumPageComments.scss";
+@import "./src/components/FormInvitationCollaboration.scss";
+@import "./src/components/AccountCreationsMyShares.scss";
+@import "./src/components/InvitationPannel.scss";
+@import "./src/components/AccountCreationContributions.scss";
+@import "./src/components/ChatBox.scss";
+
+$colorYellow: #ffbd59;
+$colorDark: #070a09;
+$blueColor: #4c60ae;
+$fontSizeP: 1.2rem;
+$fontSizeBouton: 1.3rem;
+$fontSizeTitre: 1.5rem;
+
+body {
+  background-color: $colorDark;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  // background-color: #ffbd59c3;
+} /* the new scrollbar will have a flat appearance with the set background color */
+::-webkit-scrollbar-thumb {
+  background-color: #4c60aebb;
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-corner {
+  background-color: $colorDark;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
