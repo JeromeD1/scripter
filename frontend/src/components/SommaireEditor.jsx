@@ -139,6 +139,7 @@ export default function SommaireEditor(props) {
             )
 
             setTextes(textareaParagraphe) // textes du template
+            setImages([])
             setPageHistory(textareaParagraphe) // idem
             setPageFuture(textareaParagraphe) // idem
           })
@@ -244,6 +245,7 @@ export default function SommaireEditor(props) {
               )
 
               setTextes(textareaParagraphe) // textes du template
+              setImages([])
               setPageHistory(textareaParagraphe) // idem
               setPageFuture(textareaParagraphe) // idem
             })
@@ -368,6 +370,7 @@ export default function SommaireEditor(props) {
               )
 
               setTextes(textareaParagraphe) // textes du template
+              setImages([])
               setPageHistory(textareaParagraphe) // idem
               setPageFuture(textareaParagraphe) // idem
             })
@@ -504,6 +507,7 @@ export default function SommaireEditor(props) {
               )
 
               setTextes(textareaParagraphe) // textes du template
+              setImages([])
               setPageHistory(textareaParagraphe) // idem
               setPageFuture(textareaParagraphe) // idem
             })

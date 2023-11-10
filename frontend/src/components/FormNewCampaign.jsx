@@ -343,7 +343,6 @@ export default function FormNewCampaign(props) {
             )[0]
             setEditedCampagne(newEditedCampagne)
 
-            /// ///////////////////////////////////////////////////////////////////
             myApi
               .post("/scenarios", {
                 auteurs_id:
@@ -382,7 +381,7 @@ export default function FormNewCampaign(props) {
                     handleClickButtonScript(newScenariosOfEditedCampagne)
                   })
               })
-            /// ///////////////////////////////////////////////////////////////////
+            
           })
           .catch((err) => console.error(err))
       })

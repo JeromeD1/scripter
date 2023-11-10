@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom"
 import ReadingPage from "../components/ReadingPage"
 import SommaireReading from "../components/SommaireReading"
 import ChatBox from "../components/ChatBox"
-import summary from "../assets/images/sommaire.svg"
+import summary from "../assets/images/summary2.png"
 import iconChat from "../assets/images/icon_chat.png"
 import myApi from "../services/myAPI"
 
@@ -216,7 +216,7 @@ export default function ScenarioReading() {
               src={summary}
               alt="summary"
               title="Click to open the summary"
-              className="img-showMenu"
+              className="img-showMenu cursorHover"
               onDragStart={handleDragStart}
               onClick={() => {
                 setShowSummary(!showSummary)
